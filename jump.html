@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jump</title>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="css/jump.css">
+</head>
+<body>
+    <div class="mask">
+        <div class="content">
+            <div class="score-container">
+                <p class="title">本次得分
+                    </>
+                    <p class="score">0</h1>
+            </div>
+            <button class="restart">
+                重新开始
+            </button>
+        </div>
+    </div>
+    <div class="info">
+        <a class="title" href="#" target="_blank">
+            Jump
+            </h3>
+            <a class="author" href="#" target="_blank">
+            </a>
+            <div class="score-gaming">
+                得分：
+                <span class="score-current">0</span>
+            </div>
+    </div>
+    <script src="js/libs/three.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var content=document.querySelector(".content");
+        var num=Math.ceil(Math.random()*5);
+        // console.log(num);
+        content.style.background="url('./imgs/"+num+".png')";
+        // content.style.background="#0094ff";
+
+    </script>
+</body>
+
+</html>
